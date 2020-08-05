@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F9F9F9;
+    font-family: 'Roboto', sans-serif;
+    color: #131313;
+}
+
+/*Header styles*/
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+header .logo{
+    padding: 15px 30px;
+    padding-left: 45px;
+    font-size: 13px;
+}
+
+header ul{
+    padding: 15px 30px;
+    padding-right: 45px;
+    display: flex;
+    align-self: center;
+}
+
+header ul li{
+    list-style: none;
+    padding-left: 25px;
+}
+
+header a {
+    text-decoration: none;
+    color: #131313;
+    transition: ease 300ms all;
+    display: inline-block;
+}
+
+header a:hover {
+    transform: scale(1.4,1.4);
+    color: black;
+}
+
+/*Landing page styles*/
+
+.container{
+    padding: 30px;
+}
+
+.grid-container{
+    display: grid;    
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    padding-bottom: 8px;
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    background-color: #7CB4FE;
+    border-radius: 50%;
+    transition: 300ms ease all;
+}
+.circle:hover{
+    transform: scale(1.4,1.4);
+}
+
+.left{
+    text-align: center;
+    align-self: center;
+    justify-self: self-start;
+    
+    margin-left: -60px;
+    
+}
+
+.left h3{
+    font-weight: 400;
+    transform: rotate(-90deg);
+}
+
+.left .circle1{
+    position: absolute;
+    top: 425px;
+    left: 130px;
+    opacity: 0.59;
+}
+
+.left .circle2{
+    position: absolute;
+    top: 330px;
+    left: 160px;
+    opacity: 0.49;
+}
+
+
+.right{
+    justify-self: end;
+    align-self: center;
+    font-size: 100px;
+    color: #131313;
+    margin-right: 120px;
+}
+
+.right .circle3{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 250px;
+    left: 1210px;
+    opacity: 1;
+    
+}
+
+.right .circle4{
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    top: 600px;
+    left: 835px;
+    opacity: 0.54;
+}
+
+/*About me*/
+
+.container .description{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 52px;
+    font-weight: lighter;
+}
+
+/*PROJECTS*/
+.container section{
+    padding: 80px 20px;
+}
+.container .projects-section{
+    display: flex;
+}
+.container .projects-section h2{
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: normal;
+}
+.container .projects-section #project-categories{
+    list-style: none;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+}
+.container .projects-section #project-categories li button{
+    border-radius: 25px;
+    border: 2px solid rgba(0,0,0,0.6);
+    opacity: 0.6;
+    padding: 12px 22px;
+    margin-right: 30px;
+    transition: 300ms ease all;
+    
+    background-color: transparent;
+}
+.container .projects-section #project-categories li button:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.container #project-list{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    list-style: none;
+    
+}
+
+.card{
+    width: 50%;
+    height: 300px;
+    margin: 40px 0;
+    padding: 90px 60px;
+    background-color: white;
+    box-shadow: 0px 10px 14px rgba(0,0,0,0.10);
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 200;
+    transition: 300ms ease all;
+    
+    text-align: center;
+}
+
+.text-card{
+    /*margin-bottom: 5px;*/
+}
+
+.card:hover{
+    transform: scale(1.05,1.05);
+}
+
+.card img{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+    height: 90%;
+    border: 1px solid rgb(219, 219, 219);
+}
+
+.card .project2{
+    
+    width: 90%;
+}
+
+.card h3{
+    text-transform: uppercase;
+    font-weight: 500;
+    
+}
+.card a{
+    color: #7CB4FE;
+    text-decoration: underline;
+    
+}
+
+.container #project-list li h3, .container #project-list li p, .container #project-list li a{
+    padding-bottom: 3px;
+}
+
+/* FORM STYLES */
+form{
+    width: 50%;
+    margin: auto;
+}
+form input, form textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+form input[type=submit]{
+    width: 25%;
+    padding: 15px 10px;
+    background: #7CB4FE;
+    color: #131313;
+    border: 1px solid #131313;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px auto;
+    font-size: 16px;
+    transition: 300ms all ease;
+}
+
+form input[type=submit]:hover{
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+    background: rgb(150, 195, 255);
+    color: black;
+    
+}
+
+form input[disabled]{
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.message{
+    width: 50%;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    margin: 10px auto;
+    transition: 300ms ease all;
+}
+
+.success{
+    background-color: rgb(111, 209, 111);
+}
+
+.success a{
+    color: white;
+}
+
+.failed{
+    background-color: rgb(207, 100, 100);
+}
+
+/* PROJECT DETAILS STYLES HERE */
+
+.goBack{
+    display: flex;
+    position: absolute;
+    top: 100px;
+    left: 240px;
+    text-decoration: none;
+
+    /*margin-left: 20px;*/
+}
+
+.goBack i{
+    font-size: 25px;
+    color: #131313;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.goBack:hover i{
+    transform:scale(1.2);
+}
+
+.card-details{
+    margin-right: auto;
+    margin-left: auto;
+    padding: 40px;
+    height: 60vh;
+}
+
+.card-details:hover{
+    transform: scale(1.015);
+}
+
+.grid-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
+
+.grid-details img{
+    width: 90%;
+    height: 70%;
+    margin:auto;
+}
+
+.grid-details .right-col{
+    text-align: center;
+    /*align-self: center;*/
+} 
+
+.grid-details .right-col h2{
+    margin-top: 20px;
+    font-size: 35px;
+} 
+.grid-details .right-col h4{
+    text-transform: initial;
+    font-weight: normal;
+    margin-top: 18px;
+    margin-bottom: 12px;
+    font-size: 15px;
+} 
+.grid-details .right-col p{
+    margin-bottom: 7px;
+    font-size: 19px;
+}
+
+.grid-details .right-col ul{
+    list-style: none;
+    margin: auto;
+
+}
+.grid-details .right-col li{
+    width: auto;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+}
